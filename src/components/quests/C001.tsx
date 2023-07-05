@@ -18,9 +18,10 @@ const C001 = () => {
 
   const handleSubmit = () => {
     if (password === "12345") {
-      alert("Chính xác");
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     } else {
       setWrong(true);
+      setPassword("");
     }
   };
   return (

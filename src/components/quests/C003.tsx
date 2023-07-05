@@ -25,8 +25,8 @@ const ButtonLock = ({ onChange, symbol, color }: ButtonLockProps) => {
       alignItems="center"
       bgColor={color[val]}
       _hover={{ bgColor: color[val] }}
-      h={16}
-      w={16}
+      h={12}
+      w={12}
       colorScheme="messenger"
     >
       {symbol?.[val] || ""}
