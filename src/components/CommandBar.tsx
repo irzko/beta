@@ -8,7 +8,7 @@ export default function CommandBar() {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCommand(event.target.value);
   };
-  const pages = ["P001"];
+  const pages = ["P001", "P002"];
   const questions = ["C001", "C003", "C004", "C005", "C006"];
   const handleSubmit = () => {
     if (command) {

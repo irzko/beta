@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import P001 from "./components/P001";
+import * as Pages from "./components/pages";
 import * as Quest from "./components/quests";
 import PageNotFound from "./pages/PageNotFound";
 import Home from "./pages/Home";
@@ -16,7 +16,8 @@ function App() {
         </Route>
         <Route path="/pages/" element={<Layout />}>
           <Route index element={<PageNotFound />} />
-          <Route path="P001" element={<P001 />} />
+          <Route path="P001" element={<Pages.P001 />} />
+          <Route path="P002" element={<Pages.P002 />} />
         </Route>
         <Route path="/quests/" element={<Layout />}>
           <Route index element={<PageNotFound />} />

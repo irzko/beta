@@ -7,8 +7,10 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const C001 = () => {
+  const navigate = useNavigate();
   const [wrong, setWrong] = useState(false);
   const [password, setPassword] = useState("");
   const handleChange = (value: string) => {
@@ -18,7 +20,7 @@ const C001 = () => {
 
   const handleSubmit = () => {
     if (password === "23516") {
-      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      navigate("/pages/P002");
     } else {
       setWrong(true);
       setPassword("");
