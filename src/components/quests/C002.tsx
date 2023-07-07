@@ -15,30 +15,151 @@ import { useEffect, useState } from "react";
 const qBank = [
   {
     id: 1,
-    question: "Giải phương trình sau: 3x^3 - 5x^2 + 2x - 7 = 0",
-    options: ["1", "3", "Không có đáp án chính xác", "2"],
-    answer: "1",
+    question: "Nội dung nào dưới đây thuộc đối tượng nghiên cứu của hóa học?",
+    options: [
+      "Tốc độ ánh sáng trong chân không.",
+      "Quá trình phân chia tế bào.",
+      "Cấu tạo của chất và sự biến đổi của chất.",
+      "Sự hình thành hệ Mặt Trời.",
+    ],
+    answer: "2",
   },
   {
     id: 2,
-    question:
-      "Cho một tam giác ABC vuông tại A và có AB = 3 cm, AC = 4 cm. Gọi D là trung điểm của BC. Tính độ dài đoạn AD.",
-    options: ["1.5 cm", " 2 cm", "2.5 cm", "3 cm"],
-    answer: "1",
+    question: "Trong thành phần nguyên tử, những hạt mang điện tích là",
+    options: [
+      "proton và alpha.",
+      " proton và neutron.",
+      "proton và electron.",
+      "electron và neutron.",
+    ],
+    answer: "2",
   },
   {
     id: 3,
-    question:
-      "Cho một dãy số Fibonacci bắt đầu bằng 1 và 2, tức là 1, 2, 3, 5, 8, 13, 21, ... Cho số Fibonacci thứ 10^9 là F(n), hãy tính phần dư khi F(n) chia cho 7.",
-    options: ["0", "1", "2", "3"],
-    answer: "1",
+    question: "Nguyên tử không mang điện vì",
+    options: [
+      "có tổng số hạt electron bằng tổng số hạt neutron.",
+      "tổng số hạt neutron bằng tổng số hạt proton.",
+      "có tổng số hạt proton bằng tổng số hạt electron.",
+      "được tạo nên bởi các hạt không mang điện.",
+    ],
+    answer: "2",
   },
   {
     id: 4,
     question:
-      "Cho một hình chóp S.ABCD có đáy ABCD là hình vuông cạnh a và SA vuông góc với mặt phẳng đáy và cắt đường chéo BD tại O. Biết rằng độ dài cạnh của hình chóp là 10 cm và góc giữa mặt phẳng (SBD) và mặt phẳng (ABCD) là 60 độ. Tính thể tích của hình chóp.",
-    options: ["100√2 cm^3", "150√2 cm^3", "200√2 cm^3", "250√2 cm^3"],
-    answer: "1",
+      "Nguyên tử potassium (K) có 19 electron; 19 proton và 20 neutron. Số khối của nguyên tử potassium là",
+    options: ["20.", "19.", "39.", "58."],
+    answer: "2",
+  },
+  {
+    id: 5,
+    question:
+      "Tất cả các nguyên tử có số đơn vị điện tích hạt nhân là 8 đều thuộc nguyên tố nào sau đây?",
+    options: ["Hydrogen.", "Helium.", "Oxygen.", "Carbon."],
+    answer: "2",
+  },
+  {
+    id: 6,
+    question: "Orbital nguyên tử (kí hiệu là AO) là",
+    options: [
+      "Khu vực không gian xung quanh hạt nhân nguyên tử mà xác suất tìm thấy proton trong khu vực đó là lớn nhất (khoảng 90%).",
+      "khu vực không gian trong hạt nhân nguyên tử mà xác suất tìm thấy electron trong khu vực đó là lớn nhất (khoảng 90%).",
+      "khu vực không gian xung quanh hạt nhân nguyên tử mà xác suất tìm thấy electron trong khu vực đó là lớn nhất (khoảng 90%).",
+      "khu vực không gian xung quanh hạt nhân nguyên tử mà xác suất tìm thấy electron trong khu vực đó là nhỏ nhất (khoảng 10%).",
+    ],
+    answer: "2",
+  },
+  {
+    id: 7,
+    question: "Mỗi orbital nguyên tử chứa tối đa bao nhiêu electron?",
+    options: ["1 electron.", "3 electron.", "2 electron.", "4 electron."],
+    answer: "2",
+  },
+  {
+    id: 8,
+    question: "Lớp M có số phân lớp electron là",
+    options: ["1.", "3.", "2.", "4."],
+    answer: "2",
+  },
+  {
+    id: 9,
+    question: "Phát biểu nào sau đây là sai?",
+    options: [
+      "Tính kim loại là tính chất của một nguyên tố mà nguyên tử dễ nhường electron.",
+      "Trong một chu kì, theo chiều tăng dần của điện tích hạt nhân tính kim loại của các nguyên tố giảm dần, tính phi kim tăng dần.",
+      "Trong một nhóm, theo chiều tăng dần của điện tích hạt nhân tính kim loại của các nguyên tố giảm dần, tính phi kim tăng dần.",
+      "Tính phi kim là tính chất của một nguyên tố mà nguyên tử dễ nhận electron.",
+    ],
+    answer: "2",
+  },
+  {
+    id: 10,
+    question:
+      "Nguyên tố Ca có số hiệu nguyên tử là 20. Phát biểu nào sau đây về Ca là không đúng?",
+    options: [
+      "Số electron ở vỏ nguyên tử của nguyên tố Ca là 20.",
+      "Vỏ của nguyên tử Ca có 4 lớp electron và lớp ngoài cùng có 2 electron.",
+      "Nguyên tố Ca là một nguyên tố phi kim.",
+      "Hạt nhân của nguyên tử Ca có 20 proton.",
+    ],
+    answer: "2",
+  },
+  {
+    id: 11,
+    question: "Phát biểu nào sau đây về số oxi hoá là không đúng?",
+    options: [
+      "Số oxi hoá được viết ở dạng đại số, dấu viết trước, số viết sau.",
+      "Trong đơn chất, số oxi hoá của nguyên tử bằng 0.",
+      "Trong tất cả các hợp chất, số oxi hoá của hydrogen là +1.",
+      "Trong ion đơn nguyên tử, số oxi hoá của nguyên tố bằng điện tích ion.",
+    ],
+    answer: "2",
+  },
+  {
+    id: 12,
+    question: "Cho các phát biểu sau, phát biểu đúng là",
+    options: [
+      "Trong phản ứng cháy, chất bị oxi hoá thường là oxygen.",
+      "Trong công nghiệp, tất cả các phản ứng hoá học trong quy trình sản xuất đều là phản ứng oxi hoá – khử.",
+      "Trong phản ứng đốt cháy khí thiên nhiên thì khí thiên nhiên đóng vai trò là chất bị oxi hoá.",
+      "Các phản ứng oxi hoá – khử trong đời sống đều có lợi.",
+    ],
+    answer: "2",
+  },
+  {
+    id: 13,
+    question: "Phản ứng toả nhiệt là",
+    options: [
+      "phản ứng hấp thụ năng lượng dưới dạng nhiệt.",
+      "phản ứng lấy nhiệt từ môi trường.",
+      "phản ứng giải phóng năng lượng dưới dạng nhiệt.",
+      "phản ứng làm nhiệt độ môi trường giảm đi.",
+    ],
+    answer: "2",
+  },
+  {
+    id: 14,
+    question: "Phát biểu nào sau đây không đúng?",
+    options: [
+      " Phản ứng hoá học là quá trình phá vỡ các liên kết trong chất đầu và hình thành các liên kết mới để tạo thành sản phẩm.",
+      "Sự phá vỡ liên kết cần cung cấp năng lượng.",
+      "Sự hình thành liên kết cần cung cấp năng lượng.",
+      "Sự hình thành liên kết giải phóng năng lượng.",
+    ],
+    answer: "2",
+  },
+  {
+    id: 15,
+    question: "Điều kiện nào sau đây không phải là điều kiện chuẩn?",
+    options: [
+      "Áp suất 1 bar và nhiệt độ 25°C hay 298K.",
+      "Áp suất 1 bar và nhiệt độ 298K.",
+      "Áp suất 1 bar và nhiệt độ 25K.",
+      "Áp suất 1 bar và nhiệt độ 25°C.",
+    ],
+    answer: "2",
   },
 ];
 
@@ -149,7 +270,7 @@ const PassedExam = () => {
       </Center>
       <Center fontWeight={500}>Chúc mừng bạn vượt qua bài kiểm tra</Center>
       <Center>
-        Mã PIN là&nbsp;<Badge colorScheme="green">12345</Badge>
+        Mã PIN là&nbsp;<Badge colorScheme="green">23516</Badge>
       </Center>
     </Box>
   );

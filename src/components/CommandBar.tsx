@@ -9,7 +9,7 @@ export default function CommandBar() {
     setCommand(event.target.value);
   };
   const pages = ["P001"];
-  const questions = ["C001", "C002", "C003"];
+  const questions = ["C001", "C003", "C004", "C005", "C006"];
   const handleSubmit = () => {
     if (command) {
       let cmd = command.toUpperCase();

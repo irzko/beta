@@ -7,8 +7,9 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const C001 = () => {
+  const navigate = useNavigate();
   const [wrong, setWrong] = useState(false);
   const [password, setPassword] = useState("");
   const handleChange = (value: string) => {
@@ -17,8 +18,8 @@ const C001 = () => {
   };
 
   const handleSubmit = () => {
-    if (password === "23516") {
-      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    if (password === "092307") {
+      navigate("/pages/P001");
     } else {
       setWrong(true);
       setPassword("");
@@ -34,7 +35,7 @@ const C001 = () => {
           Mã PIN sai
         </Center>
       ) : (
-        <Center py={4}>Nhập mã PIN để truy cập dữ liệu phòng giáo lý</Center>
+        <Center py={4}>Nhập mã PIN</Center>
       )}
 
       <Center>
@@ -47,6 +48,7 @@ const C001 = () => {
             placeholder="__"
             mask
           >
+            <PinInputField />
             <PinInputField />
             <PinInputField />
             <PinInputField />

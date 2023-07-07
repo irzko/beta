@@ -1,147 +1,25 @@
-import { Box } from "@chakra-ui/react";
+// Địa điểm đầu
+
+import { Box, Center, Container, Flex } from "@chakra-ui/react";
 
 const P001 = () => {
   return (
-    <Box pt={20} px={2}>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit. Veniam eligendi quod
-        dolorem et ullam. Iure laboriosam et enim fuga quaerat dolor illum sit
-        voluptatem? Dolores in molestias quo vero explicabo. Lorem ipsum dolor
-        sit amet, consectetur adipisicing elit. Veniam eligendi quod dolorem et
-        ullam. Iure laboriosam et enim fuga quaerat dolor illum sit voluptatem?
-        Dolores in molestias quo vero explicabo. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Veniam eligendi quod dolorem et ullam.
-        Iure laboriosam et enim fuga quaerat dolor illum sit voluptatem? Dolores
-        in molestias quo vero explicabo. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Veniam eligendi quod dolorem et ullam. Iure laboriosam
-        et enim fuga quaerat dolor illum sit voluptatem? Dolores in molestias
-        quo vero explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Veniam eligendi quod dolorem et ullam. Iure laboriosam et enim
-        fuga quaerat dolor illum sit voluptatem? Dolores in molestias quo vero
-        explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Veniam eligendi quod dolorem et ullam. Iure laboriosam et enim fuga
-        quaerat dolor illum sit voluptatem? Dolores in molestias quo vero
-        explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit. Veniam eligendi quod
-        dolorem et ullam. Iure laboriosam et enim fuga quaerat dolor illum sit
-        voluptatem? Dolores in molestias quo vero explicabo. Lorem ipsum dolor
-        sit amet, consectetur adipisicing elit. Veniam eligendi quod dolorem et
-        ullam. Iure laboriosam et enim fuga quaerat dolor illum sit voluptatem?
-        Dolores in molestias quo vero explicabo. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Veniam eligendi quod dolorem et ullam.
-        Iure laboriosam et enim fuga quaerat dolor illum sit voluptatem? Dolores
-        in molestias quo vero explicabo. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Veniam eligendi quod dolorem et ullam. Iure laboriosam
-        et enim fuga quaerat dolor illum sit voluptatem? Dolores in molestias
-        quo vero explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Veniam eligendi quod dolorem et ullam. Iure laboriosam et enim
-        fuga quaerat dolor illum sit voluptatem? Dolores in molestias quo vero
-        explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Veniam eligendi quod dolorem et ullam. Iure laboriosam et enim fuga
-        quaerat dolor illum sit voluptatem? Dolores in molestias quo vero
-        explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit. Veniam eligendi quod
-        dolorem et ullam. Iure laboriosam et enim fuga quaerat dolor illum sit
-        voluptatem? Dolores in molestias quo vero explicabo. Lorem ipsum dolor
-        sit amet, consectetur adipisicing elit. Veniam eligendi quod dolorem et
-        ullam. Iure laboriosam et enim fuga quaerat dolor illum sit voluptatem?
-        Dolores in molestias quo vero explicabo. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Veniam eligendi quod dolorem et ullam.
-        Iure laboriosam et enim fuga quaerat dolor illum sit voluptatem? Dolores
-        in molestias quo vero explicabo. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Veniam eligendi quod dolorem et ullam. Iure laboriosam
-        et enim fuga quaerat dolor illum sit voluptatem? Dolores in molestias
-        quo vero explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Veniam eligendi quod dolorem et ullam. Iure laboriosam et enim
-        fuga quaerat dolor illum sit voluptatem? Dolores in molestias quo vero
-        explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Veniam eligendi quod dolorem et ullam. Iure laboriosam et enim fuga
-        quaerat dolor illum sit voluptatem? Dolores in molestias quo vero
-        explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-        eligendi quod dolorem et ullam. Iure laboriosam et enim fuga quaerat
-        dolor illum sit voluptatem? Dolores in molestias quo vero explicabo.
-      </p>
-    </Box>
+    <Flex
+      h={"100vh"}
+      px={2}
+      flexDirection={"column"}
+      justifyContent={"center"}
+      alignItems={"center"}
+    >
+      <Center>
+        <Container>
+          <Box fontWeight={600}>Theo lời kể bạn của cô bé:</Box>
+          "Mấy ngày hôm nay, chúng tôi đã đi khắp nơi để tìm kiếm cô ấy. Tôi đã
+          hỏi mọi người, nhưng không ai biết cô ấy đi đâu cả. Chúng không rõ cô
+          ấy đi đâu, nhưng lần cuối tôi gặp cô ấy ở Phòng giáo lý 04."
+        </Container>
+      </Center>
+    </Flex>
   );
 };
 

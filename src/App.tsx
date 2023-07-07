@@ -21,8 +21,10 @@ function App() {
         <Route path="/quests/" element={<Layout />}>
           <Route index element={<PageNotFound />} />
           <Route path="C001" element={<Quest.C001 />} />
-          <Route path="C002" element={<Quest.C002 />} />
           <Route path="C003" element={<Quest.C003 />} />
+          <Route path="C004" element={<Quest.C004 />} />
+          <Route path="C005" element={<Quest.C005 />} />
+          <Route path="C006" element={<Quest.C006 />} />
         </Route>
       </Routes>
     </BrowserRouter>
