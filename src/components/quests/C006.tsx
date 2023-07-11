@@ -40,7 +40,7 @@ const C006 = () => {
               Mã PIN sai
             </Center>
           ) : (
-            <Center py={4}>Nhập mã PIN đề kiểm tra</Center>
+            <Center py={4}>Nhập mật khẩu đề kiểm tra</Center>
           )}
 
           <Center>

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 interface ButtonLockProps {
   symbol?: string[];
-  color: string[];
+  color?: string[];
   onChange?: (value: number) => void;
   value?: number;
 }
@@ -23,8 +23,8 @@ const ButtonLock = ({ onChange, symbol, color }: ButtonLockProps) => {
       onClick={handleClick}
       justifyContent="center"
       alignItems="center"
-      bgColor={color[val]}
-      _hover={{ bgColor: color[val] }}
+      bgColor={color ? color[val] : "black"}
+      _hover={{ bgColor: color ? color[val] : "grey" }}
       h={12}
       w={12}
       colorScheme="messenger"
@@ -40,12 +40,10 @@ type Code = {
 };
 
 const passwordSet = [
-  { id: 1, value: 0 },
-  { id: 2, value: 2 },
-  { id: 3, value: 4 },
-  { id: 4, value: 1 },
-  { id: 5, value: 2 },
-  { id: 6, value: 3 },
+  { id: 1, value: 9 },
+  { id: 2, value: 0 },
+  { id: 3, value: 5 },
+  { id: 4, value: 6 },
 ];
 const C003 = () => {
   const [password, setPassword] = useState<Code[]>([]);
@@ -77,8 +75,7 @@ const C003 = () => {
     console.log(isCorrect);
   };
 
-  const symbol = ["K", "I", "II", "III", "IV", "V"];
-  const color = ["red", "orange", "yellow", "green", "blue", "purple"];
+  const symbol = ["H", "K", "A", "W", "S", "O", "N", "E", "P", "T"];
   return (
     <Flex flexDirection="column" justifyContent="center" h="100vh">
       <Center>
@@ -86,7 +83,6 @@ const C003 = () => {
           <ButtonLock
             key={index}
             symbol={symbol}
-            color={color}
             onChange={(value) => {
               handleChange(value, item.id);
             }}

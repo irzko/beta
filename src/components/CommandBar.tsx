@@ -8,18 +8,11 @@ export default function CommandBar() {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCommand(event.target.value);
   };
-  const pages = ["P001", "P002"];
-  const questions = ["C001", "C003", "C004", "C005", "C006"];
+  const questions = ["C001", "C003", "C004", "C005", "C006", "C007"];
   const handleSubmit = () => {
     if (command) {
       let cmd = command.toUpperCase();
-      if (cmd[0] === "P") {
-        if (pages.includes(cmd)) {
-          navigate("/pages/" + cmd);
-        } else {
-          navigate("/that-vo-tri");
-        }
-      } else if (cmd[0] === "C") {
+      if (cmd[0] === "C") {
         if (questions.includes(cmd)) {
           navigate("/quests/" + cmd);
         } else {

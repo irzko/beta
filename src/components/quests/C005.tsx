@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const C001 = () => {
+const C005 = () => {
   const navigate = useNavigate();
   const [wrong, setWrong] = useState(false);
   const [password, setPassword] = useState("");
@@ -71,4 +71,4 @@ const C001 = () => {
   );
 };
 
-export default C001;
+export default C005;

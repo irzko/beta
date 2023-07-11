@@ -1,5 +1,6 @@
-import { Button, Center, Flex } from "@chakra-ui/react";
+import { Box, Button, Center, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface ButtonLockProps {
   symbol?: string[];
@@ -40,12 +41,13 @@ type Code = {
 };
 
 const passwordSet = [
-  { id: 1, value: 4 },
-  { id: 2, value: 2 },
-  { id: 3, value: 4 },
-  { id: 4, value: 1 },
+  { id: 1, value: 1 },
+  { id: 2, value: 5 },
+  { id: 3, value: 1 },
+  { id: 4, value: 0 },
 ];
-const C003 = () => {
+const C004 = () => {
+  const navigate = useNavigate();
   const [password, setPassword] = useState<Code[]>([]);
   useEffect(() => {
     const newPassword = passwordSet.map((pass) => ({
@@ -72,24 +74,48 @@ const C003 = () => {
 
   const handleSubmit = () => {
     const isCorrect = Test();
-    console.log(isCorrect);
+    if (isCorrect) {
+      navigate("/pages/P003");
+    }
   };
 
   const symbol = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  // const color = ["red", "orange", "yellow", "green", "blue", "purple"];
   return (
     <Flex flexDirection="column" justifyContent="center" h="100vh">
       <Center>
+        <Box
+          rounded={"md"}
+          mx={1}
+          display={"flex"}
+          justifyContent="center"
+          alignItems="center"
+          h={12}
+          w={12}
+          fontSize={34}
+        >
+          <i className="bi bi-search"></i>
+        </Box>
         {passwordSet.map((item, index) => (
           <ButtonLock
             key={index}
             symbol={symbol}
-            // color={color}
             onChange={(value) => {
               handleChange(value, item.id);
             }}
           />
         ))}
+        <Box
+          rounded={"md"}
+          mx={1}
+          display={"flex"}
+          justifyContent="center"
+          alignItems="center"
+          h={12}
+          w={12}
+          fontSize={34}
+        >
+          <i className="bi bi-search"></i>
+        </Box>
       </Center>
       <Center mt={10}>
         <Button
@@ -105,4 +131,4 @@ const C003 = () => {
   );
 };
 
-export default C003;
+export default C004;

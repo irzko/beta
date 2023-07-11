@@ -18,6 +18,7 @@ function App() {
           <Route index element={<PageNotFound />} />
           <Route path="P001" element={<Pages.P001 />} />
           <Route path="P002" element={<Pages.P002 />} />
+          <Route path="P003" element={<Pages.P003 />} />
         </Route>
         <Route path="/quests/" element={<Layout />}>
           <Route index element={<PageNotFound />} />
@@ -26,6 +27,7 @@ function App() {
           <Route path="C004" element={<Quest.C004 />} />
           <Route path="C005" element={<Quest.C005 />} />
           <Route path="C006" element={<Quest.C006 />} />
+          <Route path="C007" element={<Quest.C007 />} />
         </Route>
       </Routes>
     </BrowserRouter>
