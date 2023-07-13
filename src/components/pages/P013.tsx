@@ -13,7 +13,8 @@ const P012 = () => {
     >
       <Center>
         <Container>
-          "Quá trình điều tra kết thúc, hãy đến hội trường để báo cáo."
+          "Quá trình điều tra kết thúc, người tình nghi này vô tội, hãy đến hội
+          trường để báo cáo."
         </Container>
       </Center>
     </Flex>
