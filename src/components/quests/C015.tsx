@@ -1,4 +1,4 @@
-import { Button, Center, Flex } from "@chakra-ui/react";
+import { Box, Button, Center, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -41,12 +41,12 @@ type Code = {
 };
 
 const passwordSet = [
-  { id: 1, value: 9 },
-  { id: 2, value: 0 },
-  { id: 3, value: 5 },
-  { id: 4, value: 6 },
+  { id: 1, value: 1 },
+  { id: 2, value: 5 },
+  { id: 3, value: 1 },
+  { id: 4, value: 0 },
 ];
-const C003 = () => {
+const C004 = () => {
   const navigate = useNavigate();
   const [password, setPassword] = useState<Code[]>([]);
   useEffect(() => {
@@ -75,14 +75,26 @@ const C003 = () => {
   const handleSubmit = () => {
     const isCorrect = Test();
     if (isCorrect) {
-      navigate("/pages/P004");
+      navigate("/pages/P003");
     }
   };
 
-  const symbol = ["H", "K", "A", "W", "S", "O", "N", "E", "P", "T"];
+  const symbol = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   return (
     <Flex flexDirection="column" justifyContent="center" h="100vh">
       <Center>
+        <Box
+          rounded={"md"}
+          mx={1}
+          display={"flex"}
+          justifyContent="center"
+          alignItems="center"
+          h={12}
+          w={12}
+          fontSize={34}
+        >
+          <i className="bi bi-search"></i>
+        </Box>
         {passwordSet.map((item, index) => (
           <ButtonLock
             key={index}
@@ -92,6 +104,18 @@ const C003 = () => {
             }}
           />
         ))}
+        <Box
+          rounded={"md"}
+          mx={1}
+          display={"flex"}
+          justifyContent="center"
+          alignItems="center"
+          h={12}
+          w={12}
+          fontSize={34}
+        >
+          <i className="bi bi-search"></i>
+        </Box>
       </Center>
       <Center mt={10}>
         <Button
@@ -107,4 +131,4 @@ const C003 = () => {
   );
 };
 
-export default C003;
+export default C004;

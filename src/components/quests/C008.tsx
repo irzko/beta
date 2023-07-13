@@ -41,12 +41,12 @@ type Code = {
 };
 
 const passwordSet = [
-  { id: 1, value: 9 },
+  { id: 1, value: 8 },
   { id: 2, value: 0 },
-  { id: 3, value: 5 },
-  { id: 4, value: 6 },
+  { id: 3, value: 6 },
+  { id: 4, value: 4 },
 ];
-const C003 = () => {
+const C008 = () => {
   const navigate = useNavigate();
   const [password, setPassword] = useState<Code[]>([]);
   useEffect(() => {
@@ -75,11 +75,11 @@ const C003 = () => {
   const handleSubmit = () => {
     const isCorrect = Test();
     if (isCorrect) {
-      navigate("/pages/P004");
+      navigate("/pages/P005");
     }
   };
 
-  const symbol = ["H", "K", "A", "W", "S", "O", "N", "E", "P", "T"];
+  const symbol = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   return (
     <Flex flexDirection="column" justifyContent="center" h="100vh">
       <Center>
@@ -107,4 +107,4 @@ const C003 = () => {
   );
 };
 
-export default C003;
+export default C008;

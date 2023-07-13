@@ -1,25 +1,28 @@
-import { useState } from "react";
-import NumLock from "../locks/NumLock";
 import { Center, Flex } from "@chakra-ui/react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import NumLock from "../locks/NumLock";
 
-const C007 = () => {
+const C010 = () => {
+  const code = "7457";
   const navigate = useNavigate();
   const [wrong, setWrong] = useState(false);
   const [password, setPassword] = useState("");
+
   const handleChange = (value: string) => {
     if (wrong) setWrong(false);
     setPassword(value);
   };
 
   const handleSubmit = () => {
-    if (password === "4826") {
-      navigate("/pages/P006");
+    if (password === code) {
+      navigate("/pages/P008");
     } else {
       setWrong(true);
       setPassword("");
     }
   };
+
   return (
     <Flex flexDirection="column" justifyContent="center" h="100vh">
       <Center fontSize={24}>
@@ -33,9 +36,13 @@ const C007 = () => {
         <Center py={4}>Nhập mã PIN</Center>
       )}
 
-      <NumLock length={4} onChange={handleChange} onSubmit={handleSubmit} />
+      <NumLock
+        length={code.length}
+        onChange={handleChange}
+        onSubmit={handleSubmit}
+      />
     </Flex>
   );
 };
 
-export default C007;
+export default C010;

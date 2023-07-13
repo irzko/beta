@@ -14,7 +14,7 @@ const C007 = () => {
 
   const handleSubmit = () => {
     if (password === "4826") {
-      navigate("/pages/P006");
+      navigate("/pages/P010");
     } else {
       setWrong(true);
       setPassword("");

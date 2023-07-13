@@ -8,7 +8,24 @@ export default function CommandBar() {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCommand(event.target.value);
   };
-  const questions = ["C001", "C003", "C004", "C005", "C006", "C007"];
+  const questions = [
+    "C001",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009",
+    "C010",
+    "C011",
+    "C012",
+    "C013",
+    "C014",
+    "C015",
+    "C016",
+    "C017",
+  ];
   const handleSubmit = () => {
     if (command) {
       let cmd = command.toUpperCase();

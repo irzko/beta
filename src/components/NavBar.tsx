@@ -16,7 +16,7 @@ function NavBar() {
       py={1}
     >
       <Link to="/">
-        <Center h={8} w={8}>
+        <Center h={10} w={10}>
           <BetaLogo />
         </Center>
       </Link>
